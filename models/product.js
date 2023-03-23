@@ -8,11 +8,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     price: {
       type: DataTypes.INTEGER(10),
-      allowNull: false,
+      allowNull: true,
     },
     orgPrice: {
       type: DataTypes.INTEGER(10),
-      allowNull: true,
+      allowNull: false,
     },
     discount: {
       type: DataTypes.STRING(300),
