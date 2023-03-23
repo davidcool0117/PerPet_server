@@ -28,10 +28,10 @@ const upload = multer({
 
 app.post("/products", function (req, res) {
   const body = req.body;
-  const { name, price, image, seller, description } = body;
+  const { name, orgPrice, image, seller, description } = body;
   models.Product.create({
     name,
-    price,
+    orgPrice,
     image,
     seller,
     description,
