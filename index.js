@@ -94,6 +94,31 @@ app.post("/image", upload.single("image"), (req, res) => {
 
 /*=============== image upload end ===============*/
 
+/*=============== purchase start ===============*/
+
+app.post("/purchase/:id", (req, res) => {
+  const { id } = req.params;
+  models.Product.update(
+    {
+      soldout: 1,
+    },
+    {
+      where: { id },
+    }
+  )
+    .then((result) => {
+      res.send({
+        result: true,
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).send("에러발생");
+    });
+});
+
+/*=============== purchase end ===============*/
+
 app.listen(port, () => {
   console.log(`${port}서버 가동`);
   models.sequelize
@@ -107,3 +132,5 @@ app.listen(port, () => {
       process.exit();
     });
 });
+
+
