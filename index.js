@@ -28,13 +28,15 @@ const upload = multer({
 
 app.post("/products", function (req, res) {
   const body = req.body;
-  const { name, orgPrice, image, seller, description } = body;
+  const { name, orgPrice, price, image, seller, description, discount } = body;
   models.Product.create({
     name,
     orgPrice,
+    price,
     image,
     seller,
     description,
+    discount,
   })
     .then((result) => {
       console.log("상품생성결과:", result);
