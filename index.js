@@ -50,7 +50,7 @@ app.post("/products", function (req, res) {
 app.get("/products", function (req, res) {
   models.Product.findAll({
     order: [["createdAt", "ASC"]],
-    attributes: ["name", "price", "orgPrice", "discount", "seller", "image", "description"],
+    attributes: ["id", "name", "price", "orgPrice", "discount", "seller", "image", "description"],
   })
     .then((result) => {
       console.log("product 조회결과:", result);
