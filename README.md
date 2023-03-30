@@ -1,6 +1,5 @@
 <div align="center">
-<img width="329" alt="image" src="https://user-images.githubusercontent.com/117795271/
-228409021-d39db6a9-7b40-4630-b779-5739818d0102.svg">
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/117795271/228409021-d39db6a9-7b40-4630-b779-5739818d0102.svg">
 </div>
 
 ---
@@ -9,7 +8,7 @@
 
 #### Restful 방식으로 Front에서 상품정보를 받아 각각의 페이지에 정보를 전달합니다.
 
-** 메인페이지(hotdeal)
+**메인페이지(hotdeal)
 메인페이지(이상품어때?)
 상품 상세 페이지**
 
