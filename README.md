@@ -1,6 +1,7 @@
 <div align="center">
 <img width="329" alt="image" src="https://user-images.githubusercontent.com/117795271/
 228409021-d39db6a9-7b40-4630-b779-5739818d0102.svg">
+</div>
 
 ---
 
@@ -22,18 +23,26 @@
 
 # **🙏 Request**
 
-### 상품 정보 요청
+**통신방식 : RESTFUL**
+**Data Type : JSON**
 
-| **페이지** |                                **RequestURL**                                | **Format** |                                                                     **통신방식**                                                                      |
-| :--------: | :--------------------------------------------------------------------------: | :--------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 메인페이지 |   https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products    |  **JSON**  | <span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> |
-| 상세페이지 | https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products/{id} |  **JSON**  | <span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> |
+<span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> /products 상품 정보 조회
 
-### 상품 업로드
+<span style="background-color: #CB3837; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">post</span> /products 상품 등록
 
-|  **페이지**  |                             **RequestURL**                              | **Format** |                                                                      **통신방식**                                                                      |
-| :----------: | :---------------------------------------------------------------------: | :--------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 업로드페이지 | https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products |  **JSON**  | <span style="background-color: #CB3837; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">post</span> |
+<span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> /products/id 상품 상세 페이지
+
+| Parameter key |  Data정보  | NULL |
+| :-----------: | :--------: | :--: |
+|      ID       |    ID값    |  X   |
+|     NAME      |   상품명   |  X   |
+|    SELLER     |   판매자   |  X   |
+|   ORGPRICE    |    원가    |  X   |
+|     PRICE     |   할인가   |  O   |
+|   DISCOUNT    |   할인율   |  O   |
+|  DESCRIPTION  |  상품정보  |  X   |
+|     IMAGE     | 이미지주소 |  X   |
+|    SOLDOUT    | 품절 유무  |  X   |
 
 [express-image]: https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white
 [pwa-image]: https://img.shields.io/badge/pwa-6109AC?style=for-the-badge&logo=pwa&logoColor=white
