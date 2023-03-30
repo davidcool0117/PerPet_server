@@ -28,7 +28,7 @@ const upload = multer({
 
 app.post("/products", function (req, res) {
   const body = req.body;
-  const { name, orgPrice, price, image, seller, description, discount } = body;
+  const { name, orgPrice, price, image, seller, description, discount, category } = body;
   models.Product.create({
     name,
     orgPrice,
@@ -37,6 +37,7 @@ app.post("/products", function (req, res) {
     seller,
     description,
     discount,
+    category,
   })
     .then((result) => {
       console.log("상품생성결과:", result);
@@ -50,7 +51,7 @@ app.post("/products", function (req, res) {
 app.get("/products", function (req, res) {
   models.Product.findAll({
     order: [["createdAt", "ASC"]],
-    attributes: ["id", "name", "price", "orgPrice", "discount", "seller", "image", "description", "soldout"],
+    attributes: ["id", "name", "price", "orgPrice", "discount", "seller", "image", "description", "soldout", "category"],
   })
     .then((result) => {
       console.log("product 조회결과:", result);
