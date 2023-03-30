@@ -4,7 +4,7 @@
 
 ---
 
-# **📌 About**
+# 📌 About
 
 #### Restful 방식으로 Front에서 상품정보를 받아 각각의 페이지에 정보를 전달합니다.
 
@@ -20,9 +20,32 @@
 
 ---
 
+# 📥 Install
+
+### Backend
+
+```bash
+$ git clone https://github.com/wooyoung6685/perpetserver.git
+$ cd perpetserver
+```
+
+```bash
+$ nvm use v.16.19.0
+$ npm init
+$ npm i cors
+$ npm i express
+$ npm i multer
+$ npm i nodemon
+$ npm i sequelize
+$ npm i sqlite3
+$ npm start
+```
+
+---
+
 # **🙏 Request**
 
-**통신방식 : RESTFUL**
+**API : RESTFUL API**
 **Data Type : JSON**
 
 <span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> /products 상품 정보 조회
