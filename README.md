@@ -48,11 +48,11 @@ $ npm start
 **API : RESTFUL API**
 **Data Type : JSON**
 
-<span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> => /products 상품 정보 조회
+<span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> : /products 상품 정보 조회
 
-<span style="background-color: #CB3837; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">post</span> => /products 상품 등록
+<span style="background-color: #CB3837; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">post</span> : /products 상품 등록
 
-<span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> => /products/id 상품 상세 페이지
+<span style="background-color: #339933; display:inline-block; width: 50px; height: 26px; border-radius:5px;color:white; text-align:center">get</span> : /products/id 상품 상세 페이지
 
 | Parameter key |  Data정보  | NULL |
 | :-----------: | :--------: | :--: |
