@@ -81,13 +81,11 @@ app.get("/products/:id", (req, res) => {
     });
 });
 
-app.get("/products/:category", (req, res) => {
+app.get("/products/category/:category", (req, res) => {
   const params = req.params;
   const { category } = params;
-  models.Product.findOne({
-    where: {
-      category: category,
-    },
+  models.Product.findAll({
+    where: { category: category },
   })
     .then((result) => {
       console.log("조회결과", result);
@@ -100,10 +98,11 @@ app.get("/products/:category", (req, res) => {
       res.send("상품조회시 에러가 발생 하였습니다.");
     });
 });
-app.get("/products/:category/:id", (req, res) => {
+
+app.get("/products/category/:category/:id", (req, res) => {
   const params = req.params;
   const { id, category } = params;
-  models.Product.findOne({
+  models.Product.findAll({
     where: {
       id: id,
       category: category,
