@@ -25,7 +25,7 @@ const upload = multer({
 /*================ multer end ================*/
 
 /*=============== products  start ==============*/
-
+//
 app.post("/products", function (req, res) {
   const body = req.body;
   const { name, orgPrice, price, image, seller, description, discount, category } = body;
