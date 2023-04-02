@@ -32,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     category: {
       type: DataTypes.STRING(30),
-      allowNull: false,
+      allowNull: true,
     },
     soldout: {
       type: DataTypes.INTEGER(1),

@@ -53,7 +53,9 @@ get : /products 상품 정보 조회
 
 post : /products 상품 등록
 
-get : /products/id 상품 상세 페이지
+get : /products/:id 상품 상세 페이지
+
+get : /products/category/:category 상품 카테고리 페이지
 
 | Parameter key |  Data정보  | NULL |
 | :-----------: | :--------: | :--: |
@@ -65,6 +67,7 @@ get : /products/id 상품 상세 페이지
 |   DISCOUNT    |   할인율   |  O   |
 |  DESCRIPTION  |  상품정보  |  X   |
 |     IMAGE     | 이미지주소 |  X   |
+|   CATEGORY    |  카테고리  |  O   |
 |    SOLDOUT    | 품절 유무  |  X   |
 
 [express-image]: https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white
